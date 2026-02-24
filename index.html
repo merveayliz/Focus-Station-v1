@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayliz Focus Station | Odaklanma Merkezi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="yazilim"> <div class="app-container">
+        <header>
+            <div class="logo">Ayliz<span>Focus</span></div>
+            <nav class="theme-switcher">
+                <button onclick="setTheme('yazilim')" title="Yazılımcı Modu">💻</button>
+                <button onclick="setTheme('ogrenci')" title="Pastel Öğrenci">🎨</button>
+                <button onclick="setTheme('is')" title="Kurumsal Zen">👔</button>
+            </nav>
+        </header>
+
+      <main class="focus-grid">
+    <section class="timer-card">
+        <div class="timer-modes">
+            <button onclick="setTimer(25)">25 Dakika</button>
+            <button onclick="setTimer(90)">90 Dakika</button>
+            <button onclick="setTimer(0)">Süresiz (Kronometre)</button>
+        </div>
+    
+        <h2 id="status-text">Çalışma Zamanı</h2>
+        <div class="timer-display" id="timer">25:00</div>
+    
+        <div class="timer-controls">
+            <button id="startBtn">Başlat</button>
+            <button id="saveBtn">Kaydet</button> 
+            <button id="resetBtn">Sıfırla</button>
+        </div>
+        <br> <br>
+          <div class="sound-box card">
+            <h3>Odak Sesleri 🎧</h3>
+            <div class="sound-controls">
+                <button onclick="toggleSound('rain')">🌧️</button>
+                <button onclick="toggleSound('piano')">🎹</button>
+                <button onclick="toggleSound('ocean')">🌊</button>
+            </div>
+            <audio id="audio-rain" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"></audio> 
+            <audio id="audio-piano" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+            <audio id="audio-ocean" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+        </div>
+    </section>
+
+    <section class="side-panel">
+        <div class="stats-box card">
+            <h3>Verimlilik Raporu</h3>
+            <p>Bugün: <span id="today-total">0</span> Dakika</p>
+            
+            <div class="goal-area">
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <p class="goal-text">Günlük Hedef: 300 dk / <span id="goal-percent">0%</span></p>
+            </div>
+            <button id="clearDataBtn" style="background: #e74c3c; font-size: 12px; margin-top: 15px; width: 100%;">Verileri Temizle</button>
+        </div><br>
+
+        <div class="todo-link-box card">
+            <h3>Görevlerin 📝</h3>
+            <p>Listen hazır mı?</p>
+            <a href="https://merveayliz.github.io/to-do-list/" target="_blank" class="todo-btn">Listemi Aç</a>
+        </div>
+    </section> 
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
