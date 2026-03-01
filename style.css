@@ -177,13 +177,12 @@ button:hover, .todo-btn:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Mod butonlarına özel hover */
 .timer-modes button:hover {
     background: var(--accent) !important;
     border-color: var(--accent);
 }
 
-/* Tüm kutular için standart tasarım (Border eklendi) */
+
 .timer-card, .stats-box, .notes-box, .sound-box, .todo-link-box {
     background: var(--card);
     padding: 30px;
@@ -193,7 +192,7 @@ button:hover, .todo-btn:hover {
     margin-bottom: 20px;
 }
 
-/* İstatistiklerin altına İlerleme Çubuğu (Progress Bar) */
+
 .progress-container {
     margin-top: 20px;
     background: rgba(0,0,0,0.2);
@@ -205,7 +204,7 @@ button:hover, .todo-btn:hover {
 .progress-bar {
     background: var(--accent);
     height: 100%;
-    width: 0%; /* JS ile güncellenecek */
+    width: 0%; 
     transition: width 1s ease-in-out;
 }
 
@@ -213,4 +212,5 @@ button:hover, .todo-btn:hover {
     font-size: 12px;
     margin-top: 5px;
     opacity: 0.8;
+
 }
