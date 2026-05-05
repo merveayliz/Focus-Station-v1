@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body data-theme="yazilim"> <div class="app-container">
+<body data-theme="yazilim"> 
+    <div class="app-container">
         <header>
             <div class="logo">Ayliz<span>Focus</span></div>
             <nav class="theme-switcher">
@@ -18,15 +19,16 @@
         </header>
 
       <main class="focus-grid">
-    <section class="timer-card">
-        <div class="timer-modes">
-            <button onclick="setTimer(25)">25 Dakika</button>
-            <button onclick="setTimer(90)">90 Dakika</button>
-            <button onclick="setTimer(0)">Süresiz (Kronometre)</button>
-        </div>
+        <section class="timer-card">
+         <div class="timer-modes">
+             <button onclick="setTimer(25)">25 Dakika</button>
+             <button onclick="setTimer(90)">90 Dakika</button>
+             <button onclick="setTimer(0)">Süresiz (Kronometre)</button>
+         </div>
     
         <h2 id="status-text">Çalışma Zamanı</h2>
-        <div class="timer-display" id="timer">25:00</div>
+        
+            <div class="timer-display" id="timer">25:00</div>
     
         <div class="timer-controls">
             <button id="startBtn">Başlat</button>
